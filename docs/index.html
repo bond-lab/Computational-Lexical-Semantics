@@ -1,0 +1,448 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html xmlns:xhtml="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>HG7017: Computational Lexical Semantics</title>
+<!-- <link rel="Stylesheet" href="http://www.ling.helsinki.fi/util/css/ykiel.css" type="text/css" media="all"> -->
+</head>
+<body>
+
+
+<h1>HG7017:  Computational Lexical Semantics</h1>
+
+<p><a href='http://www3.ntu.edu.sg/home/fcbond/'>Francis <b>Bond</b></a>, 
+2014.
+<p>Thursday 9:30-13:30 <a href="http://maps.ntu.edu.sg/maps#q:Computer%20Laboratory%202%20%28HSS%29">HSS Computer Lab 2</a> (HSS-01-05)
+
+
+<p> In this course students will become familiar with how to represent
+word meanings computationally and a variety of methods for
+automatically determining the meaning of words. These include
+dictionary based methods, such as LESK, graph based methods such as
+UKB, supervised methods such as sequence classification and best paths
+as well as vector space methods. We will finish with a discussion of
+how to provide feedback from word sense disambiguation to meaning
+representation.
+
+<p>The course is a seminar course, with participants choosing and
+presenting papers each week.  Because of this, content varies from
+year to year depending on the composition of the class.  
+ 
+<p> The course includes a strong computational component, students
+will experiment with implementing systems and algorithms, in addition
+to learning about them. By the end of this course, graduate students
+will have an advanced knowledge of current computational approaches to
+lexical meaning. Students should be able to evaluate lexical resources
+for coverage and quality as well as to design and implement systems
+for determining meaning in text.
+
+<p>This year (2104) we will try to cover at least:
+<ul>
+  <li> Lexical Semantics in Definitions (LESK)
+  <li> Distributional Approaches (e.g. Vector Spaces)
+  <li> Structural Semantics (e.g. Semantic Dependencies)
+  <li> Graph based approaches  (e.g. personalised page rank)
+    <br> BabelNet (a much richer graph)
+  <li>Combinations
+    <ul>
+      <li> Structure + Distributional Semantics (Socher)
+      <li> Structural + Lexical (AMR)
+    </ul>
+  <li> Knowledge Acquisition (e.g. learn from definitions or text
+  snippets; also learning regular expression from examples)
+</ul>
+
+
+
+<h3>Schedule</h3>
+
+<ul>
+  <li><b>Seminar 1</b> 2014-08-14
+    <ul>
+      <li> <b><a href='http://compling.hss.ntu.edu.sg/courses/hg8003/pdf/wk-11.pdf'>Various Approaches to WSD</a></b> (HG8003 notes)
+      <li> <b>Simplified Extended LESK</b> <a href=
+      'http://ww2.cs.mu.oz.au/~tim/pubs/talip-jwsd.pdf'>(Baldwin et al
+      2010)</a> (<a href='pdf/lesk.pdf'>Slides</a>)
+      <li> <b>Research at VU</b>: <a href='pdf/CLTL.pdf'>NAF</a>
+      and <a href='pdf/newsreader.pdf'>Newsreader</a>
+    </ul>
+  <li><b>Seminar 2</b> 2014-08-21
+    <ul>
+      <li> <b>Semantic Dependencies</b> (Rose Chen:
+	<a href='pdf/Bo_Chen-PPT2.pdf'>slides</a>)
+	<ul>
+	  <li>Chen et al 2012<a href='pdf/2012-CSLW-cmn-verb-comp.pdf'>Semantic Labeling of Chinese Verb-complement Structure Based on Feature Structure</a>, CLSW'12 Proceedings of the 13th Chinese conference on Chinese Lexical Semantics, Pages 784-790  
+	  <li>Chen et al (????)<a href='pdf/IJCPOL-Bo Chen-Building a Chinese Semantic Resource Based on Feature Structure.pdf'>Building a Chinese Semantic Resource Based on Feature Structure</a> IJCPOL
+	  <li>Chen et al (2013) <a href='pdf/2013-Semantic Labeling of Chinese Serial Verb Sentences Based on Feature Structure.pdf'>Semantic Labeling of Chinese Serial Verb Sentences Based on Feature Structure</a>
+	</ul>
+      <li><b>Deep Learning over distributional spaces applied to learning
+      predominant senses</b> (Huizhen Wang:
+	<a href='pdf/word2vec and its application to wsd.pdf'>slides</a>)
+	<ul>
+	  <li> Tomas Mikolov, Kai Chen, Greg Corrado, and Jeffrey
+	  Dean. <a
+	  href='http://arxiv.org/pdf/1301.3781.pdf'>Efficient
+	  Estimation of Word Representations in Vector Space</a>. In
+	  Proceedings of Workshop at ICLR, 2013.
+	  <li> <a href='https://code.google.com/p/word2vec/'>code</a>
+	    (<a href='http://radimrehurek.com/2013/09/deep-learning-with-word2vec-and-gensim/'>in
+	    python</a>: <a href='http://radimrehurek.com/2014/02/word2vec-tutorial/'>tutorial</a>)
+	  <li>McCarthy et al. (2004)<a href='http://dl.acm.org/citation.cfm?id=1218991'>Finding predominant word senses in untagged text</a> ACL 2004
+	  <li>Lau et al (2014) <a href='http://www.aclweb.org/anthology/P/P14/P14-1025'>Learning Word Sense Distributions, Detecting Unattested Senses and Identifying Novel Senses Using Topic Models</a> (<a href='pdf/2014-acl_lau.pdf'>slides</a>)
+	</ul>
+    </ul>
+  <li><b>Seminar 3</b> 2014-08-28
+    <ul>
+      <li> <b><a href='http://www.socher.org/'>Recursive Deep Learning</a> </b>(Egor:
+	<a href='pdf/rrn.pdf'>slides</a>)
+	<ul>
+	  <li><a href="http://www.socher.org/uploads/Main/2010SocherManningNg.pdf">Learning Continuous Phrase Representations and Syntactic Parsing with Recursive Neural Networks</a>,
+	    Richard Socher, Christopher D. Manning, Andrew Y. Ng. <br><a href="http://deeplearningworkshopnips2010.wordpress.com/schedule/">Deep Learning and Unsupervised Feature Learning Workshop - NIPS 2010, Oral</a>. 
+	  <li>NAACL 2013 talk by Manning  and Socher
+(<a href="http://nlp.stanford.edu/courses/NAACL2013/">video</a>, 
+<a href="http://nlp.stanford.edu/courses/NAACL2013/NAACL2013-Socher-Manning-DeepLearning.pdf">slides</a>)
+	</ul>
+      <li> <b>Cross-lingual sense projection</b> (Giulia:
+	<a href='pdf/xling-sense.pdf'>slides</a>)
+	<ul>
+	  <li>Luisa Bentivogli and Emanuele Pianta
+	  (2005) <a href='pdf/10.1.1.149.3179-libre.pdf'>Exploiting
+	  Parallel Texts in the Creation of Multilingual Semantically
+	  Annotated Resources: The MultiSemCor Corpus</a>, In Natural
+	  Language Engineering, Special Issue on Parallel Texts,
+	  Volume 11, Issue 03, September 2005, pp. 247-261.
+	</ul>
+      <li><b>BabelNet &amp; WSD</b> (Luis:
+	<a href='pdf/babelnet.pdf'>slides</a>)
+	    <ul>
+	      <li>R. Navigli and S. Ponzetto. <a href='http://wwwusers.di.uniroma1.it/~navigli/pubs/AIJ_2012_Navigli_Ponzetto.pdf'>'BabelNet: The Automatic Construction, Evaluation and Application of a Wide-Coverage Multilingual Semantic Network.</a> Artificial Intelligence, 193, Elsevier, 2012, pp. 217-250.  
+	      <li>R. Navigli, D. A. Jurgens, D. Vannella. SemEval-2013 Task 12: <a href="http://wwwusers.di.uniroma1.it/~navigli/pubs/Semeval_2013_Navigli_etal.pdf">Multilingual Word Sense Disambiguation</a>. Proc. of 7th International Workshop on Semantic Evaluation (SemEval), in the Second Joint Conference on Lexical and Computational Semantics (*SEM 2013), Atlanta, USA, June 14-15th, 2013, pp. 222-231.
+
+<!-- R. Navigli and -->
+<!-- 	      S. Ponzetto. <a href="http://wwwusers.di.uniroma1.it/~navigli/pubs/EMNLP_2012_Navigli_Ponzetto.pdf">Joining Forces Pays Off: Multilingual -->
+<!-- 	      Joint Word Sense Disambiguation.</a> Proc. of the 2012 -->
+<!-- 	      Conference on Empirical Methods in Natural Language -->
+<!-- 	      Processing (EMNLP 2012), Jeju, Korea, July 12-14, 2012, -->
+<!-- 	      pp. 1399-1410 -->
+<!-- 	      <li>Babelfy : Introduction video (15min) -->
+<!-- 	      (<a href="http://www.youtube.com/watch?v=HZIgr3Ir6ik">http://www.youtube.com/watch?v=HZIgr3Ir6ik</a>) AND/OR -->
+<!-- 	  <li>Andrea Moro, Alessandro Raganato and Roberto Navigli. <a href="http://wwwusers.di.uniroma1.it/~moro/MoroRaganatoNavigli_TACL2014.pdf">Entity Linking meets Word Sense Disambiguation: A Unified Approach</a>. Transactions of the Association for Computational Linguistics (TACL), 2, 2014. -->
+	 
+	    </ul>
+
+
+    </ul>
+  <li><b>Seminar 4</b> 2014-09-04 (FCB has a clash 10:30-12:30)
+    <ul>
+      <li> <b><a href='http://ixa2.si.ehu.es/ukb/'>Graph Based Word Sense
+      Disambiguation and Similarity</a> with Personalized Page Rank</b> (Yukun:
+	<a href='pdf/PRslides.pdf'>slides</a>)
+	<ul>
+	  <li>Eneko Agirre and Aitor Soroa (2009) <a href="https://ixa.si.ehu.es/Ixa/Argitalpenak/Artikuluak/1233561923/publikoak/ukb_eacl09.pdf">Personalizing PageRank for Word Sense Disambiguation</a>. <i>Proceedings of the 12th conference of the European chapter of the Association for Computational Linguistics (EACL-2009)</i>. Athens, Greece.
+<li>Eneko Agirre, Oier Lopez de Lacalle and Aitor Soroa (2013) <a href="http://www.mitpressjournals.org/doi/abs/10.1162/COLI_a_00164">Random Walks for Knowledge-Based Word Sense Disambiguation</a>. <i>Computational Linguistics</i>. 40:1. ISSN 0891-2017. doi:10.1162/COLI_a_00164 (optional)
+	</ul>
+    </ul>
+  <li><b>Seminar 5</b> 2014-09-11
+    <ul>
+      <li> <b>Learning Ontologies from Definitions</b> (David:
+	<a href='pdf/KA_DavidM.pdf'>slides</a>)
+	<ul>
+	  <li>Francis Bond, Eric Nichols, Sanae Fujita and Takaaki Tanaka (2004)
+<a href="http://web.mysites.ntu.edu.sg/fcbond/open/pubs/2004-COLING-hinoki.pdf">Acquiring an Ontology for a Fundamental Vocabulary</a>. In 20th International Conference on Computational Linguistics (COLING-2004), 1319–1325, Geneva.
+	  <li>Eric Nichols, Francis Bond, and Daniel Flickinger (2005)
+<a href="http://web.mysites.ntu.edu.sg/fcbond/open/pubs/2005-ijcai-robust.pdf">Robust ontology acquisition from machine-readable dictionaries</a>. In Proceedings of the International Joint Conference on Artificial Intelligence IJCAI-2005, 1111–1116, Edinburgh.
+    </ul>
+      <li> <b>Word Sense Disambiguation</b> (Tuan Anh: 
+	<a href='pdf/TA_it-makes-sense-slides.pdf'>slides</a>)
+	<ul>
+	  <li>Zhong, Zhi, & Ng, Hwee Tou
+	  (2010). <a href="http://www.comp.nus.edu.sg/~nght/pubs/ims.pdf">It
+	  Makes Sense: A Wide-Coverage Word Sense Disambiguation
+	  System for Free Text</a>. Proceedings of the ACL 2010 System
+	  Demonstrations. (pp. 78 – 83). Uppsala, Sweden.
+	    
+	  <li>Other resources:
+	    <ul>
+	      <li><a href="http://scikit-learn.org/stable/tutorial/basic/tutorial.html">What is machine learning? Supervised learning vs unsupervised learning?</a>
+	      <li><a href="http://ai.stanford.edu/~nilsson/MLBOOK.pdf">A very good book (and free access) for hardcore learners</a>
+	    </ul>
+	</ul>
+    </ul>
+  <li><b>Seminar 6</b> 2014-09-18
+    <ul>
+      <li> <a href='pdf/Taxonomy Construction Using Syntactic Contextual Evidence.pdf'>Taxonomy Construction Using Syntactic Contextual Evidence</a> (Luu Anh Tuan and Kim Jung-jae:
+	<!-- <a href='pdf/'>slides</a>) -->
+      <li>On Research (Francis Bond:
+	<a href='pdf/you-and-your-research.pdf'>slides</a>)
+	<ul>
+	  <li>Richard Hamming (1968) <a href='http://www.cs.virginia.edu/~robins/YouAndYourResearch.html'>You and Your Research</a> 
+	  <li><a href='http://www.ntu.edu.sg/ureca/researchintegrity/Pages/authorship.aspx'>NTU Authorship Guidelines</a>
+	</ul>
+      <li>
+    </ul>
+  <li><b>Seminar 7</b> 2014-09-25
+    <ul>
+      <li> <a href='http://www.aclweb.org/anthology/W14-4716'>A computational approach to generate a sensorial lexicon</a> (Tuan Anh)
+      <li> <a href='http://panlex.org/research/'>Panlex</a> (Michael)
+	<ul>
+	  <li><a href='http://turing.cs.washington.edu/papers/SammerMTSummit07.pdf'>Building a Sense - Distinguished Multilingual Lexicon from Monolingual Corpora and Bilingual Lexicons</a>
+	</ul>
+    </ul>
+  <li>Recess
+  <li><b>Seminar 8</b> 2014-10-16
+    <ul>
+      <li><b>Combining Resources</b>  (David:
+	<a href='pdf/LSA.pdf'>slides</a>)
+    	<ul>
+      <li>Margaretha and Manurung (2008) <a href='http://www.aclweb.org/anthology/U08-1012'>Comparing the value of Latent Semantic Analysis on two English-to-Indonesian lexical mapping tasks</a>
+</ul>
+      <li>  <b>The Integrated Semantic Framework</b> (Francis:
+	<a href='pdf/wn-isf.pdf'>slides</a>)
+    </ul>
+  <li><b>Seminar 9</b> 2014-10-23  (short class)
+    <font color='red'>PROJECT ONE DUE</font> 2014-10-24 11:59 (email is fine)
+    <ul>
+      <li><a href='https://people.mpi-inf.mpg.de/~sseufert/papers/kore.pdf'>KORE: Keyphrase Overlap Relatedness for Entity Disambiguation</a> (Yukun)
+    </ul>
+  <li><b>Seminar 10</b> 2014-10-30 (+ invited talk)
+
+    <ul>
+      <li> <a href='http://dl.acm.org/citation.cfm?id=1690290'>Phrase clustering for
+	  discriminative learning</a> by Lin & Wu (Egor)
+      <li> <a href='http://anthology.aclweb.org/C/C14/C14-1151.pdf'>An Enhanced Lesk
+Word Sense Disambiguation algorithm through a Distributional Semantic
+Model</a> (P. Basile, A. Caputo, and G. Semeraro. Proceedings of COLING
+2014, the 25th International Conference on Computational Linguistics:
+Technical Papers, pages 1591-1600) (Giulia)
+
+      <li> <a href='http://compling.hss.ntu.edu.sg/events/2014-10-31-fellbaum/'>31st 15:30-18:30: Talks on Wordnet (Christiane Fellbaum) and the ERG (Dan Flickinger)</a>
+    </ul>
+  <li><b>Seminar 11</b> 2014-11-06 (no presentations 
+    --- individual meetings about your projects as necessary)
+  <!-- (Short presentations about project 2: 20min x 5)  -->
+  <!--   <p>present what you are working on (preliminary work is fine) and get some feedback -->
+  <!--     <br>10-15 minute presentation; 10-5min discussion -->
+  <li><b>Seminar 12</b> 2014-11-13 (Late start: 12:30&ndash;)
+    <ul>
+      <li> Final discussion:<br/>
+	<font size='+2'><b>What are the most important problems in your field?</b>
+	<ul>
+	  <li>Are you working on them?</font><br/>
+	</ul>
+    </ul>
+  <li><b>Final Deadline</b> 2014-12-01 
+    <font color='red'>PROJECT TWO DUE</font> 2014-12-01 11:59 (email is fine)
+
+</ul>
+
+
+<h3>Assessment</h3>
+
+<h4>Presentation One (20%): assigned subject</h4>
+
+<p>Present a paper (or series of papers), along with an extended
+  motivation/background and some discussion of applications.  We will
+  discuss both the content of the paper, and also the form of your
+  presentation.  One goal of the course is to learn how to present
+  information effectively.
+
+<p>Presentations should take an hour, with 30-40 minutes of
+presentation and 30-20 minutes discussion.  You should give me the
+corrected slides within a week of the presentation, and I will add
+them to the web page.
+
+<ul>
+  <li>Seminar 2: Rose Chen; Huizhen Wang
+  <li>Seminar 3: Egor, Giulia
+  <li>Seminar 4: Yukun, Luis
+  <li>Seminar 5: David, Tuan Anh
+</ul>
+
+<h4>Presentation Two (20%): your choice (must be OKed: should fit
+  in with your research)</h4>
+<p>Present a paper (or series of papers), along with an extended
+  motivation/background and some discussion of applications.  Can be
+  your own work (if it is ready).
+
+<ul>
+  <li>Seminar 7: Tuan Anh, Mike
+  <li>Seminar 8: David
+  <li>Seminar 9: ???
+  <li>Seminar 11: ???
+</ul>
+
+
+<h4>Project One (30%): assigned topic</h4>
+
+<p>Sample: critically evaluate one lexical resource (such as WordNet
+and tagged corpus). The evaluation will include writing code to
+summarize its properties and compare it to other resources.
+
+<p>The project must include a computational component, a presentation,
+and a written component. In the computational component the student
+will be expected to write to code analyse data and solve problems. In
+the presentation, they will present the results to their lecturer and
+peers. In the written component they will explain their results in the
+form of a short paper. They should incorporate any feedback from their
+presentation in the final paper.  The final paper should follow
+the <a href="http://www.transacl.org/submission/">submission
+guidelines for TACL</a>.
+
+
+<ul>
+  <li><b>Tuan Anh</b>: Extended Simplified LESK with the wordnet gloss corpus
+  <li><b>Egor</b>: Examining compositionally with vector-spaces
+    OR phrase clustering with
+  <li><b>Giulia</b>: Cross-lingual mapping: projection vs intersection
+  <li><b>David</b>: ? identifying and exploiting definitions in Indonesian
+    <br> and maybe other languages
+  <li><b>Yukun</b>: Named entity 
+</ul>
+
+<h4>Project Two (30\%): your choice (must be OKed: should fit in with your research)</h4>
+
+<p>Sample: implement (or extend an existing implementation of) a word
+sense disambiguation system.  
+ 
+
+
+<h3>Recommended Readings</h3>
+
+<p>As there is no textbook which covers the topics to the depth required, we
+will rely mainly on readings. the following textbooks are recommended for
+background reading.
+
+<ul>
+  <li>James Allen. (1995). <i>Natural Language Understanding</i>. Benjamin/Cummings, Second edition.
+  <li>Stephen Bird, Ewan Klein, Edward Loper (2009)
+    <strong><a href="http://www.nltk.org/book">
+	Natural Language Processing with Python</a></strong>, O'Reilly.
+  </li>
+  <li>
+    <a href="http://www.nltk.org" shape="rect">
+      NLTK Natural Language Toolkit</a>
+  </li>
+  <li>Daniel Jurafsky and James H. Martin (2009) 
+    <a href='http://www.cs.colorado.edu/~martin/slp.html'>Speech 
+      and Language Processing</a>, 2nd edition, Prentice Hall. 
+  <li>Chris Manning and Hinrich Schütze (1999) 
+    <a href='http://nlp.stanford.edu/fsnlp/'>Foundations of Statistical Natural Language Processing</a>, 
+    MIT Press. Cambridge, MA. 
+</ul>
+ 
+
+<h3>Course Outline</h3>
+
+ 
+<h4>Sample topics</h3>
+<ul>
+  <li> Representing Word Meaning
+  <li> Word Sense Disambiguation
+  <li> Dictionary based methods
+  <li> Supervised Methods
+  <li> Cross lingual disambiguation
+  <li> Graph based methods
+  <li> Vector Space Methods
+  <li> Method Combination
+  <li> WSD and applications
+  <li> Machine Translation
+  <li> Intelligent Indexing and the Semantic Web
+</ul>
+ 
+<h4>Sample Discussions</h4>
+
+<ul> 
+  <li>     Computational Lexical Semantics Relational meaning and WordNets; Vector Spaces; Ontologies  (Stevenson, 2003, ch 3); (Miller, 1998), (Vossen, 1998, ch2)
+  <li>     Splitting or Lumping: Granularity; Meaning across languages; Multiword expressions (Navigli, 2006),(Stevenson, 2003, ch 2)
+  <li>     Dictionary based methods for WSD LESK, ALT (Lesk, 1986; Ikehara et al., 1996; Baldwin et al., 2010)
+  <li>     Supervised methods for WSD. CL Special Issue on WSD (www.aclweb.org/anthology-new/J/J98/)
+  <li>     Cross lingual disambiguation for WSD (Dagan and Pereira, 1994; Zhong and Ng, 2009)
+  <li>     Graph based methods for WSD (Agirre and Soroa, 2009; Agirre et al., 2009)
+  <li>     Vector space methods for WSD (Widdows, 2004, ch 2–4)
+  <li>     Method Combination (Stevenson, 2003, ch 6)
+  <li>     Machine Translation (Carpuat et al., 2006; Chan et al., 2007)
+  <li>  Intelligent Indexing and the Semantic Web (Shadbolt et al., 2006)
+  <li>  WSD and the Representation of Meaning (Stevenson, 2003, ch 7)
+</ul>
+<h4>References</h4>
+<ul>
+  <li>  Agirre, Eneko and Aitor Soroa. (2009) .Personalizing pagerank for word sense disambiguation. In 12th conference of the European chapter of the Association for Computational Linguistics (EACL-2009), Greece.
+
+  <li>  Agirre, Eneko, Oier Lopez de Lacalle, and Aitor Soroa. (2009). Knowledge-based WSD and specific domains: performing over supervised WSD. In International Joint Conference on Artificial Intelligence (IJCAI-2009), Pasadena.
+
+  <li>  Baldwin, Timothy, Su Nam Kim, Francis Bond, Sanae Fujita, David Martinez, and Takaaki Tanaka. (2010). A reexamination of MRD-based word sense disambiguation. ACM Transactions on Asian Language Information Processing (TALIP). (to appear).
+
+  <li>  Chan, Yee Seng, Hwee Tou Ng, and David Chiang. (2007).Word sense disambiguation improves statistical machine translation. In Proceedings of the 45th Annual Meeting of the Association of Computational Linguistics,  pages 33–40, Prague, Czech Republic. Association for Computational Linguistics. URL http://www.aclweb.org/anthology/P/P07/P07-0005.
+
+  <li>  Carpuat, Marine, Pascale Fung, and Grace Ngai. (2006). Aligning word senses using bilingual corpora. ACM Transactions on Asian Language Information Processing (TALIP), 5(2):89–120,  ISSN 1530-0226. doi: http://doi.acm.org/10.1145/1165255.1165256.
+
+  <li>  Dagan, Ido and Fernando Pereira. (1994). Similarity-based estimation of word cooccurrence probabilities. In Proceedings of the 32nd Annual Meeting of the Association for Computational Linguistics, pages 272–278, Las Cruces, New Mexico, USA. Association for Computational Linguistics. doi: 10.3115/981732.981770. URL http://www.aclweb.org/anthology/P94-1038.
+
+  <li>  Ikehara, Satoru, Satoshi Shirai, and Francis Bond. (1996). Approaches to disambiguation in ALT-J/E. In International Seminar on Multimodal Interactive Disambiguation: MIDDIM-96, pages 107–117, Grenoble.
+
+  <li>  Lesk, Michael (1986). Automatic sense disambiguation: How to tell a pine cone from an ice cream cone. In Proceedings of the 1986 SIGDOC Conference, pages 24–26, New York, ACM.
+
+  <li>  Miller, George. (1998). Nouns in WordNet. In Christine Fellbaum, editor, WordNet: An Electronic Lexical Database, chapter 1, pages 23–46. MIT Press.
+
+  <li>  Navigli, Roberto. (2006). Meaningful clustering of senses helps boost word sense disambiguation performance. In Proceedings of the 21st International Conference on Computational Linguistics and 44th Annual Meeting of the Association for Computational Linguistics, pages 105–112, Sydney, Australia.
+
+  <li>  Shadbolt, Nigel, Wendy Hall, and Tim Berners-Lee. (2006). The semantic web revisited. IEEE Intelligent Systems, pages 1541–1672. (http://eprints.ecs.soton.ac.uk/12614/1/Semantic_Web_Revisted.pdf).
+
+  <li>  Stevenson, Mark. (2003). Word Sense Disambiguation. CSLI Publications.
+
+  <li>  Vossen, Piek, editor. (1998). Euro WordNet. Kluwer.
+
+  <li>  Widdows, Dominic. (2004). Geometry and Meaning. CSLI Publications.
+
+  <li>  Zhong, Zhi and Hwee Tou Ng. (2009). Word sense disambiguation for all words without hard labor. In International Joint Conference on Artificial Intelligence (IJCAI-2009), pages 1616–162.
+</ul>
+ 
+
+<h3>Motivation</h3>
+
+ 
+<p>One of the core areas of study in computational linguistics is the
+study of how words and sentence meaning is represented. This course
+covers both linguistics and computational issues, with an emphasis on
+the latter. The course also offers a grounded introduction to some
+general natural language processing techniques, such as sequence
+labeling, graph search, comparison of similarity and method
+combination.
+
+ 
+
+<h3>Aims and objectives</h3>
+
+ 
+<p>This course is designed to provide an advanced knowledge of current
+computational approaches to lexical meaning. Students should be able
+to evaluate lexical resources for coverage and quality; design and
+implement systems for determining meaning in text; and present their
+results effectively.  Students will do two small research projects
+during the course.
+ 
+
+<p>On completion of this course, the students should be able to:
+<ul>
+  <li>Critically evaluate lexical resources for cover and accuracy.
+  <li>Understand the main approaches to representing word meaning computationally
+  <li>Read, understand and present other people's research 
+  <li>Be able to implement or enhance an existing method for word sense disambiguation
+  <li>Conduct independent research on word sense disambiguation
+</ul>
+
+<hr>
+<address>
+<strong>Francis Bond </strong>
+&lt;<a href="mailto:bond@ieee.org">bond@ieee.org</a>&gt;
+<br> <a href="http://compling.hss.ntu.edu.sg/">Computational Linguistics Lab</a>
+<br> <a href="http://linguistics.hss.ntu.edu.sg/">Division of Linguistics and Multilingual Studies</a>
+<br> <a href="http://www.ntu.edu.sg/">Nanyang Technological University</a>
+<br>Level 3, Room 55, 14 Nanyang Drive, Singapore 637332
+<br>Tel:  (+65) 6592 1568; Fax: (+65) 6794 6303
+</address>
+<hr>
+
+
+</body>
+</html>
